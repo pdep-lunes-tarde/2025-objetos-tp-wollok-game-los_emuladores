@@ -1,8 +1,8 @@
 # Grupo
 
-Nombre: **COMPLETAR ACA**
+Nombre: Los Emuladores
 
-Integrantes: **COMPLETAR ACA**
+Integrantes: Agustin Arias, Daniela Bautista, Marcos Belfiore, Lara Simes
 
 # Consigna TP Integrador
 
@@ -40,8 +40,9 @@ De esa entrega vamos a ayudarles a decidir que agregar para la siguiente entrega
 
 En esta entrega se evaluará el uso de objetos en el tp. Debe haber presente al menos una persona del grupo ese día para la corrección, caso contrario se considera no entregado.
 
-# Juego: NOMBRE
+# Juego: PALAN'T
 
-DESCRIPCION
+DESCRIPCION: El personaje de nuestro juego es un estudiante que no le gusta agarrar la pala; lo que mas le gusta es dormir, viciar con la play y escuchar musica. Del cielo caen sus cosas preferidas y tambien lo que mas miedo le da, las palas. Nuestro estudiante se encuentra en la parte inferior de la pantalla, moviendolo para los costados, sumará puntos si agarra los objetos de ocio y perderá el juego si agarra alguna pala.
 
-CONTROLES
+CONTROLES: Para mover a nuestro personaje solo se utilizaran las flechas derecha e izquierda, ya que no se podrá mover ni para arriba ni para abajo.
+
