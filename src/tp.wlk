@@ -1,19 +1,35 @@
+import personaje.*
 import wollok.game.*
 
-object juegoPalant{
-     method ancho() {
+
+object palant {
+  
+    method ancho() {
         return 50
     }
     method alto() {
-        return 50
+        return 30
     }
     method configurar() {
         game.width(self.ancho())
         game.height(self.alto())
         game.cellSize(32)
-        game.ground("pantalla_verde.png")
+
+                game.addVisual(estudiante)
+
+        keyboard.right().onPressDo {
+            estudiante.direccion(derecha)
+        }
+      
+        keyboard.left().onPressDo {
+            estudiante.direccion(izquierda)
+        }
+        
     }
-    method iniciar(){
+
+    method jugar() {
+        self.configurar()
+
         game.start()
-  }
+    }
 }
