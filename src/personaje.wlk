@@ -4,7 +4,7 @@ import tp.*
 
 object estudiante {
     var direccion = sinDireccion
-    var posicion = new Position(x=10, y=10)
+    var posicion = new Position(x=10, y=0)
 
     method image() {
         return "estudiante2.png"
