@@ -11,6 +11,7 @@ object palant {
         return 30
     }
     method configurar() {
+        game.ground("fondoBinario.jpg")
         game.width(self.ancho())
         game.height(self.alto())
         game.cellSize(32)
