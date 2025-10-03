@@ -2,6 +2,16 @@ import wollok.game.*
 import tp.*
 
 
+object joystickNormal{
+    var posicion = new Position(x=20, y=10) 
+    method image(){
+        return "joystick_normal_chico.png"
+    }
+    method position() {
+      return posicion 
+    }
+}
+
 object estudiante {
     var direccion = sinDireccion
     var posicion = new Position(x=20, y=0)

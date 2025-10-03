@@ -27,6 +27,8 @@ object palant {
 
         game.onTick(intervaloDeTiempo, "movimiento", { estudiante.move() })
 
+        game.addVisual(joystickNormal)
+
         keyboard.space().onPressDo{
             intervaloDeTiempo = 5 
             game.removeTickEvent("movimiento")
