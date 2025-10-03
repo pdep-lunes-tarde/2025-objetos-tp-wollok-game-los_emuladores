@@ -21,10 +21,10 @@ object estudiante {
     method direccion(nuevaDireccion) {
         direccion = nuevaDireccion
     }
-
-    method move() {
-        const nuevaPosicion = direccion.siguientePosicion(posicion)
+    method mover(){
+        self.position(direccion.siguientePosicion(posicion))
     }
+    
 }
 
 

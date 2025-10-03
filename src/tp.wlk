@@ -19,10 +19,12 @@ object palant {
 
         keyboard.right().onPressDo {
             estudiante.direccion(derecha)
+            estudiante.mover()
         }
       
         keyboard.left().onPressDo {
             estudiante.direccion(izquierda)
+            estudiante.mover()
         }
         
     }
