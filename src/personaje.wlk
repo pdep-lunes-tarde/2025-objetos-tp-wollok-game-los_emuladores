@@ -24,6 +24,19 @@ object estudiante {
     method mover(){
         self.position(direccion.siguientePosicion(posicion))
     }
+
+     method move() {
+        const nuevaPosicion = direccion.siguientePosicion(posicion)
+
+        posicion = self.posicionCorregida(nuevaPosicion)
+    }
+
+    method posicionCorregida(posicionACorregir) {
+        const nuevaY = wraparound.aplicarA(posicionACorregir.y(), 0, palant.alto())
+        const nuevaX = wraparound.aplicarA(posicionACorregir.x(), 0, palant.ancho())
+
+        return new Position(x=nuevaX, y=nuevaY)
+    }
     
 }
 
@@ -43,6 +56,18 @@ object derecha {
 object sinDireccion {
     method siguientePosicion(posicion) {
         return posicion
+    }
+}
+
+object wraparound {
+    method aplicarA(numero, topeInferior, topeSuperior) {
+        if(numero < topeInferior) {
+            return topeSuperior
+        } else if(numero > topeSuperior) {
+            return topeInferior
+        } else {
+            return numero
+        }
     }
 }
 
